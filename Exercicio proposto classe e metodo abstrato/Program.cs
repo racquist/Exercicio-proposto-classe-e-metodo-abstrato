@@ -42,11 +42,11 @@ namespace Course
             double total = 0;
             foreach(TaxPayer taxPayer in list)
             {
-                Console.WriteLine(taxPayer.Name + " : $" + taxPayer.AnualTaxes().ToString("F2",CultureInfo.InvariantCulture));
+                Console.WriteLine(taxPayer.Name + " : $ " + taxPayer.AnualTaxes().ToString("F2",CultureInfo.InvariantCulture));
                 total += taxPayer.AnualTaxes();
             }
             Console.WriteLine();
-            Console.WriteLine("TOTAL TAXES : S " + total.ToString("f2", CultureInfo.InvariantCulture));
+            Console.WriteLine("TOTAL TAXES : $ " + total.ToString("f2", CultureInfo.InvariantCulture));
         }
     }
 }
